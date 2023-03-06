@@ -12,8 +12,11 @@
       <el-table-column prop="phone" label="联系方式"></el-table-column>
     </el-table>
     <!-- 分页 -->
-    <el-pagination style="margin-top: 20px;" background layout="prev,paper,next"
-      :total="tableData.length"></el-pagination>
+    <div style="margin-top: 20px;">
+      <el-pagination background layout="prev, pager, next" :total="tableData.length">
+      </el-pagination>
+    </div>
+
   </div>
 </template>
 
